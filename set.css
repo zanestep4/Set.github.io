@@ -1,0 +1,119 @@
+/*
+  NAME: Zane Stephens
+  DATE: 31 March 2023
+  SECTION/TA: Internet Development
+
+  The styling for the game Set! This includes both the main
+  menu view and the game view. It is also responsible for 
+  hiding images and displaying text, noting whether it was a 
+  set or not.
+ */
+
+body, button, select, input {
+  text-align: center;
+  font-size: 12pt;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+button, select {
+  padding: 8px;
+  background-color: white;
+  border: 2pt solid black;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 16pt;
+}
+
+#start-btn {
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#menu-view > article {
+  background-color: #6F77ED;
+  border-radius: 0.35em;
+  border: 5pt solid black;
+  color: white;
+}
+
+#game-view > #details-bar {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  vertical-align: center;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  color: white;
+  font-size: 14pt;
+}
+
+#game-view #board {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-left-style: solid;
+  border-left-color: black;
+  border-left-width: 5pt;
+  border-right-style: solid;
+  border-right-color: black;
+  border-right-width: 5pt;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 5pt;
+  padding: 20px;
+}
+
+#back-btn, #refresh-btn {
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+
+#board .card {
+  display: flex;
+  width: 220px;
+  height: 95px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.35em;
+  border-radius: 1em;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  justify-content: space-evenly;
+  vertical-align: center;
+}
+
+.card {
+  display: flex;
+  margin: auto;
+  height: 70%;
+}
+
+.selected {
+  box-shadow: 6px 6px #636363;
+}
+
+.hide-imgs img {
+  display: none;
+}
+
+.hide-imgs p {
+  display: flex;
+  font-size: 16pt;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
